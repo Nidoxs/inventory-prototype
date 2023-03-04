@@ -59,8 +59,6 @@ local function ItemSlot(props, hooks)
 		end
 	end, { props.index, props.changeItemIndex, props.indexCurrentlyHovered })
 
-	print("render")
-
 	return e("Frame", {
 		LayoutOrder = index,
 		BackgroundTransparency = 0,
