@@ -81,10 +81,13 @@ local function ItemSlot(props, hooks)
 			Size = UDim2.fromScale(1, 1),
 			TextSize = if empty then 6 else 12,
 			TextColor3 = Color3.fromRGB(255, 255, 255),
+
+			-- random mention of pear here is just to see clearly that items are clearly being moved
 			BackgroundColor3 = if empty
 				then Color3.fromRGB(50, 50, 50)
 				elseif item.name == "Pear" then Color3.fromRGB(79, 124, 74)
 				else Color3.fromRGB(125, 125, 125),
+
 			[Roact.Event.MouseEnter] = onMouseEnter,
 			[Roact.Event.MouseLeave] = onMouseLeave,
 			[Roact.Event.InputBegan] = if not empty then inputBegan else nil,
