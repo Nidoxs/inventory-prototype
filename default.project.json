@@ -1,0 +1,40 @@
+{
+	"name": "inventory-prototype",
+	"tree": {
+		"$className": "DataModel",
+		"ServerScriptService": {
+			"$path": "src/server",
+			"Server": {
+				"$path": "src/bootstrap/server.server.lua"
+			},
+			"ServerPackages": {
+				"$path": {
+					"optional": "ServerPackages/"
+				}
+			}
+		},
+		"ReplicatedStorage": {
+			"Client": {
+				"$path": "src/client"
+			},
+			"Gui": {
+				"$path": "src/gui"
+			},
+			"Packages": {
+				"$path": {
+					"optional": "Packages/"
+				}
+			},
+			"Shared": {
+				"$path": "src/shared"
+			}
+		},
+		"StarterPlayer": {
+			"StarterPlayerScripts": {
+				"Client": {
+					"$path": "src/bootstrap/client.client.lua"
+				}
+			}
+		}
+	}
+}

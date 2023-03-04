@@ -1,0 +1,7 @@
+name = "inventory-prototype"
+
+[[inputs]]
+glob = "assets/images/*.{jpg,png}"
+codegen = true
+codegen-path = "src/shared/images.lua"
+codegen-base-path = "assets/images"
