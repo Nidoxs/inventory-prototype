@@ -2,17 +2,6 @@
 	"name": "inventory-prototype",
 	"tree": {
 		"$className": "DataModel",
-		"ServerScriptService": {
-			"$path": "src/server",
-			"Server": {
-				"$path": "src/bootstrap/server.server.lua"
-			},
-			"ServerPackages": {
-				"$path": {
-					"optional": "ServerPackages/"
-				}
-			}
-		},
 		"ReplicatedStorage": {
 			"Client": {
 				"$path": "src/client"
@@ -24,9 +13,6 @@
 				"$path": {
 					"optional": "Packages/"
 				}
-			},
-			"Shared": {
-				"$path": "src/shared"
 			}
 		},
 		"StarterPlayer": {
