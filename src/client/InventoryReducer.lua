@@ -24,7 +24,8 @@ local DEFAULT_INVENTORY = {
 	},
 }
 
--- This entire example is all on the client, but this would be the server too (it'd be roughly similar but would index a table of user id indexed inventories etc.)
+-- This entire example is all on the client, but this would be the server too (it'd be roughly similar
+-- but would index a table of user id indexed inventories etc.)
 local reducer = Rodux.createReducer(DEFAULT_INVENTORY, {
 	itemIndexChanged = function(state, action)
 		local currentIndex = action.currentIndex
